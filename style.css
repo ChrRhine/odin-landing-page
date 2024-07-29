@@ -5,7 +5,7 @@
 }
 
 body {
-  height: 120vh;
+  height: 150vh;
   font-family: Roboto, sans-serif;
   display: flex;
   flex-direction: column;
@@ -32,9 +32,9 @@ body {
   flex-grow: 1;
   display: flex;
   justify-content: space-between;
-  height: 48px;
   height: 100%;
   align-items: center;
+  max-width: 960px;
 }
 
 ul {
@@ -64,7 +64,7 @@ a {
 }
 
 .hero-text {
-  flex-basis: 50%;
+  max-width: 450px;
 }
 
 .hero-main-text {
@@ -84,13 +84,13 @@ button {
   color: #f9faf8;
   background-color: #3882F6;
   border-radius: 5px;
-  padding: 8px;
+  padding: 8px 24px;
 }
 
 .image {
   color: #f9faf8;
-  background-color: grey;
-  width: 400px;
+  background-color: rgb(128, 128, 140);
+  width: 450px;
   height: 200px;
   display: flex;
   justify-content: center;
@@ -104,13 +104,15 @@ button {
 }
 
 .narrow {
-  max-width: 750px;
+  max-width: 770px;
+  justify-content: flex-start;
 }
 
 .info h2 {
   color: #1f2937;
   font-size: 36px;
   font-weight: 1000;
+  margin-bottom: 36px
 }
 
 .card-container {
@@ -160,4 +162,19 @@ button {
   align-self: flex-end;
   font-weight: bold;
   font-size: 20px;
+}
+
+.call-container {
+  flex-grow: 1;
+  height: 40%;
+  align-items: center;
+  color: #f9faf8;
+  background-color: #3882F6;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.call-container button {
+  border: 1px solid #f9faf8;
 }
